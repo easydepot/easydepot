@@ -1,0 +1,54 @@
+@(helloForm: Form[Application.EasyDepotRequest])
+
+@import helper._
+
+@main(title = "Déposer votre document") {
+    
+    <h1>Vos informations d'identité</h1>
+    
+    @form(action = routes.Application.submit, args = 'id -> "helloform") {
+        
+        @inputText(
+            field = helloForm("firstName"),
+            args = '_label -> "Votre Prénom", 'placeholder -> "Jean"
+        )
+        
+        @inputText(
+            field = helloForm("lastName"),
+            args = '_label -> "Votre Nom", 'placeholder -> "Martin"
+        )
+        
+          @inputDate(
+            field = helloForm("dateOfBirth"),
+            args = '_label -> "Date de naissance", 'placeholder -> "Date de naissance"
+        )
+        
+     <h1>Vos coordonnées</h1>
+     
+      @inputText(
+            field = helloForm("email"),
+            args = '_label -> "Votre Adresse Email", 'placeholder -> "Jean.martin@easydepot.fr"
+        )
+      
+     @inputText(
+            field = helloForm("emailconfirm"),
+            args = '_label -> "Confirmer votre adresse email", 'placeholder -> "Jean.martin@easydepot.fr"
+        ) 
+      
+     <h1>Votre document à protéger</h1>
+
+    
+     @inputFile(
+            field = helloForm("deposit"),
+            args = '_label -> "Document à déposer", 'placeholder -> "Mon Document"
+        )
+
+    
+                  
+        <p class="buttons">
+            <input type="submit">
+        <p>
+        
+    }
+    
+}

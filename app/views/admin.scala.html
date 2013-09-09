@@ -1,0 +1,23 @@
+@(records: List[Record])
+
+@import helper._
+
+@main("Liste des demandes de dépot") {
+    
+    <h1>@records.size() Demande(s)</h1>
+    
+    <ul>
+        @for(record <- records) {
+            <li>
+                @record.id 
+                @record.firstName
+                @record.lastName
+                @record.deposit
+                
+                
+            </li>
+        }
+    </ul>
+    
+        
+}

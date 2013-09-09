@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<!--
+	Verti 2.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Easy-Depot: Protéger une oeuvre en 1 clic!</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,800" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Oleo+Script:400" rel="stylesheet" type="text/css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+<link rel="stylesheet" type="text/css" href="resources/styles/dndimg.css">
+	<link rel="stylesheet" type="text/css" href="resources/styles/jquery/cupertino/jquery-ui-1.8.1.custom.css">
+	<script src="http://www.google.com/jsapi?key=ABQIAAAADYbHHQrNWPElNtE4hn2g1hQhn5tTlmnhbGVHENfXgw8ik0kvARSWpfuAdtdt1KqinQpUokxB7SpcsQ"
+			type="text/javascript"></script>
+	<script type="text/javascript">
+		google.load("jquery", "1");
+		google.load("jqueryui", "1");
+	</script>
+	<script type="text/javascript" src="resources/scripts/dndimg.js"></script>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+	</head>
+	<body class="left-sidebar">
+
+		<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+						
+							<!-- Header -->
+								<header id="header">
+								
+									<!-- Logo -->
+										<div id="logo">
+											<h1><a href="#" id="logo">Easy-Depot</a></h1>
+											<span>Protéger votre oeuvre en 1 click</span>
+										</div>
+									
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+												<li><a href="index.html">Bienvenue</a></li>
+												<li class="current_page_item" ><a href="left-sidebar.html">Déposer une oeuvre</a></li>
+												<li><a href="right-sidebar.html">Nos tarifs</a></li>
+												<li><a href="no-sidebar.html">En savoir plus</a></li>
+											</ul>
+										</nav>
+								
+								</header>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		<!-- Main Wrapper -->
+			<div id="main-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="4u">
+						
+							<!-- Sidebar -->
+								<div id="sidebar">
+
+									<section>
+										<h3>Comment votre oevure est protégée?</h3>
+										<p>L'horodatage à valeur probante est une méthode entièrement dématérialisée qui permet d'attester, devant la justice, de la date de création d'un document et faire valoir vos droits</p>
+
+										<footer>
+											<a href="no-sidebar.html" class="button button-icon button-icon-info">En savoir plus</a>
+										</footer>
+									</section>
+
+									<!--<section>
+										<h3>Subheading</h3>
+										<ul class="style2">
+											<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+											<li><a href="#">Ornare in hendrerit in lectus</a></li>
+											<li><a href="#">Semper mod quis eget mi dolore</a></li>
+											<li><a href="#">Quam turpis feugiat sit dolor</a></li>
+											<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
+											<li><a href="#">Semper mod quisturpis nisi</a></li>
+										</ul>
+									</section>-->
+
+								</div>
+						
+						</div>
+						<div class="8u skel-cell-mainContent">
+
+							<!-- Content -->
+								<div id="content">
+									<article class="last">
+
+										<h2>Déposer votre oeuvre en un click</h2>
+
+										<p>Pour protéger votre oeuvre, rien de plus simple: charger votre oeuvre au format pdf grâce au formulaire ci-dessous,</p>
+<!--<div id="dropbox"><span id="droplabel">Drop file here...</span>
+	<div id="progressbar"></div>
+</div>
+<img id="preview" src="" alt="[ preview will display here ]"/>-->
+<div class="row">
+<form method="post" action="reception.php" enctype="multipart/form-data">
+<div class="5u">
+<label for="firstname">Prénom du dépositaire</label><br />
+     <input type="text" name="firstname" value="Votre prénom" id="firstname" /><br />
+     <label for="lastname">Nom du dépositaire</label><br />
+     <input type="text" name="lastname" value="Votre nom" id="lastname" /><br />
+
+     <label for="firstname">Date de naissance</label><br />
+     <input type="date" name="dateofbirth" value="Votre date de naissance" id="dateofbirth"><br />
+</div>
+<div class="5u">
+
+     <label for="mon_fichier">Fichier (format PDF| max. 10 Mo) :</label><br />
+     <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+     <input type="file" name="mon_fichier" id="mon_fichier" /><br />
+
+
+     <input type="submit" name="submit" value="Envoyer" class="button button-icon button-icon-info" />
+   </div> 
+</form>
+</div>
+
+											
+										<h3>Et ensuite, comment ça se passe?</h3>
+										<p>Votre document est mis en attente. Vous recevrez notre confirmation de réception et une demande de paiement. Dès réception de votre paiement, par notre 											service, nous nous occupons de transmettre votre dossier à notre tiers de confiance. Sous une semaine, vous recevez votre preuve de dépot à conserver: 											votre oeuvre est protégée pour 5 ans.
+										</p>
+
+										<h3>Et si je change d'avis?</h3>
+										<p>Si vous changez d'avis, nous effaçons votre document au bout de 30 jours. 
+										</p>
+
+
+										<!--<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim 
+										quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu. 
+										Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna, 
+										fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium. 
+										Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu. 
+										Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>-->
+
+									</article>
+								</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<!--<div class="row">
+						<div class="3u">
+						
+							<!-- Links -->
+								<!--<section class="widget-links">
+									<h2>Random Stuff</h2>
+									<ul class="style2">
+										<li><a href="#">Etiam feugiat condimentum</a></li>
+										<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+										<li><a href="#">Sed porttitor cras in erat nec</a></li>
+										<li><a href="#">Felis varius pellentesque potenti</a></li>
+										<li><a href="#">Nullam scelerisque blandit leo</a></li>
+									</ul>
+								</section>
+						
+						</div>
+						<div class="3u">
+						
+							<!-- Links -->
+								<!--<section class="widget-links">
+									<h2>Random Stuff</h2>
+									<ul class="style2">
+										<li><a href="#">Etiam feugiat condimentum</a></li>
+										<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+										<li><a href="#">Sed porttitor cras in erat nec</a></li>
+										<li><a href="#">Felis varius pellentesque potenti</a></li>
+										<li><a href="#">Nullam scelerisque blandit leo</a></li>
+									</ul>
+								</section>
+						
+						</div>
+						<div class="3u">
+						
+							<!-- Links -->
+								<!--<section class="widget-links">
+									<h2>Random Stuff</h2>
+									<ul class="style2">
+										<li><a href="#">Etiam feugiat condimentum</a></li>
+										<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+										<li><a href="#">Sed porttitor cras in erat nec</a></li>
+										<li><a href="#">Felis varius pellentesque potenti</a></li>
+										<li><a href="#">Nullam scelerisque blandit leo</a></li>
+									</ul>
+								</section>
+						
+						</div>
+						<div class="3u">
+						
+							<!-- Contact -->
+								<!--<section class="widget-contact last">
+									<h2>Contact Us</h2>
+									<ul>
+										<li><a href="#" class="twitter">Twitter</a></li>
+										<li><a href="#" class="facebook">Facebook</a></li>
+										<li><a href="#" class="dribbble">Dribbble</a></li>
+										<li><a href="#" class="googleplus">Google+</a></li>
+									</ul>
+									<p>1234 Fictional Road Suite #5432<br />
+									Nashville, Tennessee 00000-0000<br />
+									(800) 555-0000</p>
+								</section>
+						
+						</div>
+					</div>-->
+					<div class="row">
+						<div class="12u">
+							<div id="copyright">
+								&copy; EasyDepot. All rights reserved. | Images: <a href="http://fotogrph.com/">fotogrph</a> + <a href="http://iconify.it/">Iconify.it</a> | Design: <a href="http://html5up.net/">HTML5 UP</a>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+	</body>
+</html>

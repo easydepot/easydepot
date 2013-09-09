@@ -1,0 +1,24 @@
+@(firstname: String, lastname: String, filename: String)
+
+@main("Votre Demande de Dépot") {
+	
+	 <h1>Résumé de votre dépot</h1>
+
+    
+    <ul >
+        
+            <li>Prénom: @firstname</li>
+            <li>Nom: @lastname</li>
+            <li>Fichier déposé: @filename</li>
+
+            
+        
+    </ul>
+    <p>Merci de votre confiance.</p>
+ 
+    
+    <p class="buttons">
+        <a href="@routes.Application.index">Retourner à la page d'accueil</a>
+    </p>
+    
+}
