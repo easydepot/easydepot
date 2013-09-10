@@ -58,6 +58,9 @@ public class Application extends Controller {
 
 	 
 	    Form<EasyDepotRequest> form = form(EasyDepotRequest.class).bindFromRequest();
+	// handle the file upload
+        Http.MultipartFormData body = request().body().asMultipartFormData();
+        Http.MultipartFormData.FilePart document = body.getFile("deposit");
         if(!form.field("email").valueOr("").isEmpty()) {
             if(!form.field("email").valueOr("").equals(form.field("emailconfirm").value())) {
                 form.reject("emailconfirm", "Erreur dans votre email");
